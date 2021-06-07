@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths: 
-      - corrige.html
+      - None
 
 jobs:
   run:
@@ -24,4 +24,4 @@ jobs:
             --token="${{ secrets.REPO_WORKFLOW_PAT }}" \
             --org_name="$org_name" \
             --repo_filter="$repo_filter" \
-            --files_to_update corrige.html
+            --files_to_update corrige.html README.md
