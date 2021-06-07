@@ -1,8 +1,0 @@
-.github/workflows/exercise.yml
-.theia/settings.json
-corrige.html
-corrige.css
-corrige.js
-README.md
-settings/files_to_update.txt
-settings/variables.txt
