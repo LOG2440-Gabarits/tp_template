@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
   push:
     paths: 
-      - corrige.html
-      - README.md
+      - trigger_file_1
+      - trigger_file_2
 
 jobs:
   run:
@@ -28,4 +28,4 @@ jobs:
             --token="${{ secrets.REPO_WORKFLOW_PAT }}" \
             --org_name="$org_name" \
             --repo_filter="$repo_filter" \
-            --files_to_update corrige.html README.md
+            --files_to_update file_to_update_1 file_to_update_2
