@@ -1,4 +1,4 @@
-# Mettre à jour l'argument paths à la ligne 10 avec le nom des fichiers (séparé par un espace) qui active le workflow lors d'une modification.
+# Mettre à jour l'argument paths à la ligne 10 avec le nom des fichiers qui active le workflow lors d'une modification.
 # Mettre à jour l'argument "--files_to_update" à la ligne 30 avec le nom des fichiers à mettre à jour (séparé par un espace)
 
 name: Update student files
@@ -7,7 +7,8 @@ on:
   workflow_dispatch:
   push:
     paths: 
-      - corrige.html README.md
+      - corrige.html
+      - README.md
 
 jobs:
   run:
