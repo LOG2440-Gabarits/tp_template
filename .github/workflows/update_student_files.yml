@@ -28,4 +28,4 @@ jobs:
             --token="${{ secrets.REPO_WORKFLOW_PAT }}" \
             --org_name="$org_name" \
             --repo_filter="$repo_filter" \
-            --files_to_update file_to_update_1 file_to_update_2
+            --files_to_update README.md
